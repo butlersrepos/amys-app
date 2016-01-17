@@ -1,0 +1,21 @@
+<head>
+	<link href="/css/amys-app.css" rel="stylesheet"/>
+</head>
+<body>
+	
+	<script src="/js/amys-app.js"></script>
+	<v-line></v-line>
+	<v-line></v-line>
+	<header></header>
+	<section class="students"></section>
+	<div id="student-entry-line" class="legalpad-line">
+		<label class="hidden">First:</label>
+		<input id="new-student-first-name" class="new-student-inputs hidden"/>
+		<label class="hidden">Last:</label>
+		<input id="new-student-last-name" class="new-student-inputs hidden"/>
+		<button id="add-student" onclick="addStudent();" class="legalpad-button new-student-inputs hidden">Add Student</button>
+		<button id="new-student" onclick="showNewStudentInputs();" class="legalpad-button">New Student</button></div>
+</body>
+<template name="new-student-template" id="new-student-template">
+	<div class="legalpad-line">{{ firstName }} {{ lastName }}</div>
+</template>
